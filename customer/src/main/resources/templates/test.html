@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>reservation test page</title>
+</head>
+<body>
+    Reservation 테스트
+    <form action="/res/reserveItem" method="post">
+        memberId : <input type="text" name="memberId" value="1"/> <br>
+        <hr>
+        itemId : <input type="text" name="itemId" value="1"/> <br>
+        totalPrice : <input type="text" name="totalPrice" value="10000"/> <br>
+        numberOfPerson : <input type="text" name="numberOfPerson" value="1"/> <br>
+        resDate : <input type="text" name="resDate" value="2019-12-31 00:00:01"/> <br>
+        <hr>
+        ** 쿠폰테이블 미완성 <br>
+        coupon : <input type="text" name="coupon" value="coupon"/> <br>
+        discountPrice : <input type="text" name="discountPrice" value="2000"/> <br>
+        ** 결제 금액 : 빼기 계산 구현 ,,ㅠ <br>
+        finalPrice <input type="text" name="finalPrice" value="8000"/> <br>
+        <hr>
+        ** 예약자 정보 <br>
+        name : <input type="text" name="name" value="heera"/> <br>
+        phone : <input type="text" name="phone" value="01012341111"/> <br>
+
+        <hr>
+        ** 결제 <br>
+        type : <input type="text" name="type" value="CARD"/> <br>
+        paymentUsage : <input type="text" name="paymentUsage" value="1"/> <br>
+        <hr>
+        ** 기타
+        <hr>
+        ** 못한거
+         boolean usage1; (사용 여부)
+         completeAt; (사용 완료일)
+         default값 -  createdAt; updatedAt;
+        <hr>
+        <input type="submit" value="예약하기">
+  </form>
+</body>
+</html>
