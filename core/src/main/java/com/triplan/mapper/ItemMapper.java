@@ -6,11 +6,11 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface ItemMapper {
 
-    void insert(ItemVO itemVO);
+    void itemInsert(ItemVO itemVO);
 
-    ItemVO select(Integer itemId);
+    ItemVO itemGet(int itemId);
 
-    void update(ItemVO itemVO);
+    void itemUpdate(ItemVO itemVO);
 
-    void delete(Integer itemId);
+    void itemDelete(int itemId);
 }

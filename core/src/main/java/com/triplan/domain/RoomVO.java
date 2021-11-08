@@ -1,28 +1,20 @@
 package com.triplan.domain;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@Getter
-@Setter
-@ToString
-@NoArgsConstructor
+import java.time.LocalDateTime;
+
+
+@Data
 public class RoomVO {
-    // 식별자 필드
-    private Integer roomId;
 
-    // 필수 입력 필드 : Default 없는 NOT NULL 필드
+    private Integer roomId;
+    private Integer itemId;
     private Integer numberOfPerson;
     private Integer maxPerson;
-
-    // Default 값이 있는 NOT NULL 필드
-
-    // Nullable 필드
+    private String name;
     private String img;
-
-    // 외래키
-    private Integer itemId;
+    private LocalDateTime resDate;
+    private Integer addPerson;
 
 }
